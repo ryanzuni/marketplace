@@ -14,7 +14,7 @@
       @stack('style-alt')
     <link rel="stylesheet" href="{{ asset('frontend/assets/css/footer.css')}}" />
 
-    <title>Responsive real estate - ypcode</title>
+    <title>Marketplace - Katering</title>
   </head>
   <body>
     @yield('header')
@@ -27,11 +27,11 @@
       <div class="footer__container container grid">
         <div>
           <a href="#" class="footer__logo">
-            Ho<span>mie</span> <i class="bx bxs-home-heart"></i>
+            Marketplace<span>Katering</span>
           </a>
           <p class="footer__description">
-            Our vision is to make all people <br />
-            the best place to live for them.
+            Our vision is to make every meal  <br />
+            a delightful experience for everyone.
           </p>
         </div>
 
@@ -100,7 +100,7 @@
       </div>
 
       <div class="footer__info container">
-        <span class="footer__copy"> &#169; ypcode. All rigths reserved </span>
+        <span class="footer__copy"> &#169; Katering. All rigths reserved </span>
         <div class="footer__privacy">
           <a href="#">Terms & Agreements</a>
           <a href="#">Privacy Policy</a>

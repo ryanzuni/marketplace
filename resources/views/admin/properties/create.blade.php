@@ -37,7 +37,7 @@
               <!-- /.card-header -->
               <!-- form start -->
               <form method="post" action="{{ route('admin.properties.store')}}" enctype="multipart/form-data">
-                @csrf 
+                @csrf
                 <div class="card-body">
                   <div class="form-group">
                     <label for="name">Name</label>
@@ -62,24 +62,8 @@
                     <input type="number" name="price" class="form-control" value="{{old('price')}}">
                   </div>
                   <div class="form-group">
-                    <label for="bed">Bed</label>
+                    <label for="bed">Weight</label>
                     <input type="number" name="bed" class="form-control" value="{{old('bed')}}">
-                  </div>
-                  <div class="form-group">
-                    <label for="bath">Bath</label>
-                    <input type="number" name="bath" class="form-control" value="{{old('bath')}}">
-                  </div>
-                  <div class="form-group">
-                    <label for="dimension">Dimension</label>
-                    <input type="number" name="dimension" class="form-control" value="{{old('dimension')}}">
-                  </div>
-                  <div class="form-group">
-                    <label for="year_build">Year build</label>
-                    <input type="date" name="year_build" class="form-control" value="{{old('year_build')}}">
-                  </div>
-                  <div class="form-group">
-                    <label for="address">address</label>
-                    <textarea class="form-control" name="address" id="address" cols="30" rows="5">{{ old('address') }}</textarea>
                   </div>
                   <div class="form-group">
                     <label for="description">Description</label>

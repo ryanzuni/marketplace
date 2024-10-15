@@ -5,7 +5,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>All Data</h1>
+            <h1>Food & Drink</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -24,7 +24,7 @@
 
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">Property</h3>
+                <h3 class="card-title">Food</h3>
               </div>
               <!-- /.card-header -->
               <div class="card-body">
@@ -54,7 +54,7 @@
                             <td>
                                 <a href="{{ route('admin.properties.edit',$property->id) }}" class="btn btn-info">edit</a>
                                 <form onclick="return confirm('are you sure ?');" class="d-inline-block" action="{{ route('admin.properties.destroy', $property->id)}}" method="post">
-                                    @csrf 
+                                    @csrf
                                     @method('delete')
                                     <button class="btn btn-danger">Delete</button>
                                 </form>
@@ -62,6 +62,7 @@
                         </tr>
                     @endforeach
                 </table>
+                <!-- Pagination links -->
               </div>
               <!-- /.card-body -->
             </div>

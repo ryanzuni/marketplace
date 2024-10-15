@@ -4,7 +4,7 @@
 <header class="header" id="header">
             <div class="nav">
                 <a href="{{ route('homepage') }}"
-                    >Ho<span>mie</span> <i class="bx bxs-home-heart"></i>
+                    >Marketplace<span>Katering</span>
                 </a>
             </div>
         </header>
@@ -13,7 +13,7 @@
 @section('content')
  <section class="home section" id="home">
                 <div class="home__container container grid">
-                    <h1 class="home__title">Luxury Family Home</h1>
+                    <h1 class="home__title">Good Food, Great Moments!</h1>
                     <img
                         class="home__img"
                         src="{{ Storage::url($property->galleries->first()->photo) }}"
@@ -36,7 +36,7 @@
                             <i id="hide" style="font-size: 1.5rem;cursor: pointer;position: absolute;top: .25rem;right: .25rem;" class='bx bx-x'></i>
                         </div>
                     @endif
-                
+
                 <div class="card__container">
                     <article class="description__content">
                         <div class="description__header">
@@ -48,7 +48,7 @@
                                 <i class="bx bx-map"></i>
                                 <span>{{ $property->location }}</span>
                             </div>
-                            <h5 class="description__price">${{ $property->price }}</h5>
+                            <h5 class="description__price">Rp{{ $property->price }}</h5>
                         </div>
                         <p class="description__text" style="text-align: justify;">
                              {{$property->description}}
@@ -60,42 +60,11 @@
                                         <i class="bx bx-building-house"></i>
                                     </span>
                                     <div class="description__feature-container">
-                                        <h6>Bedrooms</h6>
-                                        <span>{{$property->bed}} room</span>
+                                        <h6>Weight</h6>
+                                        <span>{{$property->bed}} gr</span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="description__footer-item">
-                                <div class="description__feature">
-                                    <span class="description__feature-icon">
-                                    <i class='bx bx-bath'></i>
-                                    </span>
-                                    <div class="description__feature-container">
-                                        <h6>Bath Room</h6>
-                                        <span>{{ $property->bath}} bath</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="description__footer-item">
-                                <div class="description__feature">
-                                    <span class="description__feature-icon">
-                                    <i class='bx bx-border-radius'></i>
-                                    </span>
-                                    <div class="description__feature-container">
-                                        <h6>Dimension</h6>
-                                        <span>{{ $property->dimension }} sqft</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="description__footer-item">
-                                <div class="description__feature">
-                                    <span class="description__feature-icon">
-                                    <i class='bx bx-calendar'></i>
-                                    </span>
-                                    <div class="description__feature-container">
-                                        <h6>Year Build</h6>
-                                        <span>{{ date('Y', strtotime($property->year_build)) }}</span>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -105,7 +74,7 @@
                             <h3>Contact Owner</h3>
                         </div>
                         <form action="{{ route('messages.store') }}" method="post" class="form">
-                            @csrf 
+                            @csrf
                             <div class="form-group">
                                 <input
                                     type="text"
@@ -157,7 +126,7 @@
     const hideButton = document.getElementById('hide');
     const alert = document.querySelector('.alert');
     if(hideButton && alert) {
-        hideButton.addEventListener('click', () => {   
+        hideButton.addEventListener('click', () => {
             alert.classList.add('hide');
         })
     }

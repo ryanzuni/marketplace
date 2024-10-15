@@ -27,14 +27,10 @@ class PropertyRequest extends FormRequest
             case 'POST': {
                 return [
                     'name' => 'required',
-                    'address' => 'required',
                     'location' => 'required',
                     'price' => 'required',
                     'bed' => 'required',
-                    'bath' => 'required',
-                    'dimension' => 'required',
                     'description' => 'required',
-                    'year_build' => 'required',
                     'category_id' => 'required'
                 ];
             }
@@ -42,14 +38,10 @@ class PropertyRequest extends FormRequest
             case 'PATCH': {
                 return [
                     'name' => ['required', 'unique:properties,name,'. $this->route()->property->id],
-                    'address' => 'required',
                     'location' => 'required',
                     'price' => 'required',
                     'bed' => 'required',
-                    'bath' => 'required',
-                    'dimension' => 'required',
                     'description' => 'required',
-                    'year_build' => 'required',
                     'category_id' => 'required'
                 ];
             }

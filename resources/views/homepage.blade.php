@@ -5,7 +5,7 @@
       <nav class="nav container">
         <div class="nav__logo">
           <a href="{{ route('homepage') }}"
-            >Ho<span>mie</span> <i class="bx bxs-home-heart"></i>
+            >Marketplace<span>Katering</span>
           </a>
         </div>
 
@@ -18,7 +18,7 @@
               <a href="#about" class="nav__link"> About </a>
             </li>
             <li class="nav__item">
-              <a href="#blog" class="nav__link"> Blog </a>
+              <a href="#blog" class="nav__link"> Food </a>
             </li>
             <li class="nav__item">
               <a href="#contact" class="nav__link"> Contact </a>
@@ -39,11 +39,11 @@
  <section class="home section" id="home">
         <div class="home__container container grid">
           <div class="home__data">
-            <h1 class="home__title">Helping people get their dream home</h1>
+            <h1 class="home__title">Helping businesses find their perfect catering solution</h1>
             <p class="home__description">
-              Find a different of home that comportable for you
+            Discover the perfect catering for your needs
               <br class="home__br" />
-              forget the hard thing about finding great home
+              simple, seamless, and satisfying.
             </p>
 
             @if(session()->has('message'))
@@ -54,7 +54,7 @@
             @endif
 
             <form action="{{ route('subscribers.store') }}" method="post" class="home__search">
-              @csrf 
+              @csrf
               <input
                 type="search"
                 placeholder="Enter your email..."
@@ -69,7 +69,7 @@
             <div class="home__orbe"></div>
 
             <div class="home__img">
-              <img src="{{ asset('frontend/assets/images/home.jpg')}}" alt="" />
+              <img src="{{ asset('frontend/assets/images/ayam-goreng.jpg')}}" alt="" />
             </div>
           </div>
         </div>
@@ -101,7 +101,7 @@
       <section class="section" id="property">
         <div class="container">
           <span class="section__subtitle">Best Choice</span>
-          <h2 class="section__title">Popular Property<span>.</span></h2>
+          <h2 class="section__title">Popular Food<span>.</span></h2>
 
           <div class="property__container grid">
             @foreach($properties as $property)
@@ -116,7 +116,7 @@
                     <span class="property__badge">{{ $property->category->name}} </span>
                     </div>
                     <div class="property__data">
-                    <h2 class="property__price"><span>$</span>{{ $property->price }}</h2>
+                    <h2 class="property__price"><span>Rp</span>{{ $property->price }}</h2>
                     <h3 class="property__title">{{ $property->name }}</h3>
                     <span class="property__description">
                         {{ $property->address }}</span
@@ -132,8 +132,8 @@
       <section class="subscribe section">
         <div class="subscribe__container container">
           <h2 class="subscribe__title">
-            Start listing or buying a <br />
-            property with us
+          Start ordering or serving <br />
+          meals with us today!
           </h2>
 
           <a href="#" class="button subscribe__button">Get Started </a>
@@ -155,7 +155,7 @@
    const hideButton = document.getElementById('hide');
     const alert = document.querySelector('.alert');
     if(hideButton && alert) {
-        hideButton.addEventListener('click', () => {   
+        hideButton.addEventListener('click', () => {
             alert.classList.add('hide');
         })
     }

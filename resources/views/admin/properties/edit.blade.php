@@ -52,12 +52,12 @@
                               <a href="{{ Storage::url($gallery->photo)}}">
                                 <img src="{{ Storage::url($gallery->photo)}}" width="200" alt="">
                               </a>
-                            </td>  
-                            
+                            </td>
+
                             <td>
                                 <a href="{{ route('admin.properties.galleries.edit',[$property->id,$gallery->id]) }}" class="btn btn-info">edit</a>
                                 <form onclick="return confirm('are you sure');" class="d-inline-block" action="{{ route('admin.properties.galleries.destroy', [$property->id,$gallery->id])}}" method="post">
-                                    @csrf 
+                                    @csrf
                                     @method('delete')
                                     <button class="btn btn-danger">Delete</button>
                                 </form>
@@ -80,7 +80,7 @@
               <!-- /.card-header -->
               <!-- form start -->
               <form method="post" action="{{ route('admin.properties.update', $property->id)}}">
-                @csrf 
+                @csrf
                 @method('put')
                 <div class="card-body">
                    <div class="form-group">
@@ -106,24 +106,8 @@
                     <input type="number" name="price" class="form-control" value="{{old('price', $property->price)}}">
                   </div>
                   <div class="form-group">
-                    <label for="bed">Bed</label>
+                    <label for="bed">Weight</label>
                     <input type="number" name="bed" class="form-control" value="{{old('bed', $property->bed)}}">
-                  </div>
-                  <div class="form-group">
-                    <label for="bath">Bath</label>
-                    <input type="number" name="bath" class="form-control" value="{{old('bath', $property->bath)}}">
-                  </div>
-                  <div class="form-group">
-                    <label for="dimension">Dimension</label>
-                    <input type="number" name="dimension" class="form-control" value="{{old('dimension', $property->dimension)}}">
-                  </div>
-                  <div class="form-group">
-                    <label for="year_build">Year build</label>
-                    <input type="date" name="year_build" class="form-control" value="{{old('year_build', $property->year_build)}}">
-                  </div>
-                  <div class="form-group">
-                    <label for="address">address</label>
-                    <textarea class="form-control" name="address" id="address" cols="30" rows="5">{{ old('address', $property->address) }}</textarea>
                   </div>
                   <div class="form-group">
                     <label for="description">Description</label>

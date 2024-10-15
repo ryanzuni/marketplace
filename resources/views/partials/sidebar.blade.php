@@ -1,7 +1,7 @@
  <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a target="_blank" href="{{ route('homepage') }}" class="brand-link text-center">
-        <span class="brand-text font-weight-light">Homie</span>
+        <span class="brand-text font-weight-light">Marketplace Katering</span>
     </a>
 
     <!-- Sidebar -->
@@ -16,7 +16,7 @@
       <!-- Sidebar Menu -->
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-        
+
           <li class="nav-item">
             <a href="{{ route('admin.categories.index')}}" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
@@ -29,7 +29,7 @@
             <a href="{{ route('admin.properties.index')}}" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p>
-                Property
+                Food
               </p>
             </a>
           </li>

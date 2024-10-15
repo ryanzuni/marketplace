@@ -17,13 +17,9 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('slug');
-            $table->text('address');
             $table->string('location');
             $table->integer('price');
             $table->integer('bed');
-            $table->integer('bath');
-            $table->integer('dimension');
-            $table->date('year_build');
             $table->foreignId('category_id')->constrained()->cascadeOnDelete();
             $table->timestamps();
         });

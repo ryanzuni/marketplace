@@ -98,13 +98,13 @@ button {
 }
 
 .section__title span {
-  color: #ff5c6f;
+  color: #493ca0;
 }
 
 .section__subtitle {
   display: block;
   font-size: var(--small-font-size);
-  color: #ff5c6f;
+  color: #493ca0;
 }
 
 /*=============== BUTTON ===============*/

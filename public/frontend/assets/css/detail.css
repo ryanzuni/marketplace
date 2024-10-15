@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #fdf6eb;
+  background-color: #493ca0;
   z-index: 999;
   transition: 0.4s;
   display: flex;
@@ -28,7 +28,7 @@
 }
 
 .nav span {
-  color: #ff5e72;
+  color: #ffffff;
 }
 
 .nav i {
@@ -40,7 +40,7 @@
 }
 
 .home {
-  background-color: #fdf6eb;
+  background-color: #493ca0;
 }
 
 .home__container {
@@ -78,7 +78,7 @@
 }
 
 .galleries img.active {
-  border: 3px solid #ff5c6f;
+  border: 3px solid #493ca0;
 }
 
 .card__container {
@@ -97,7 +97,7 @@
   padding: 1.5rem;
   background-color: #fff;
   border: 3px solid #fff5f6;
-  box-shadow: 8px 8px 0 rgba(353, 100, 68, 1);
+  box-shadow: 8px 8px 0 rgb(44, 50, 107);
   border-radius: 0.75rem;
 }
 
@@ -119,7 +119,7 @@
 
 .description__location i,
 .description__category i {
-  color: #ff5c6f;
+  color: #493ca0;
   font-size: 1rem;
 }
 
@@ -130,7 +130,7 @@
 
 .description__price {
   font-size: var(--h3-font-size);
-  color: #ff5c6f;
+  color: #493ca0;
   margin-left: auto;
 }
 
@@ -152,7 +152,7 @@
 }
 
 .description__feature-icon {
-  background-color: #ff5c6f;
+  background-color: #493ca0;
   padding: 0.5rem 0.75rem;
   border-radius: 0.5rem;
   display: flex;
@@ -214,7 +214,7 @@
 .btn-contact {
   width: 100%;
   display: block;
-  background-color: #ff5c6f;
+  background-color: #493ca0;
   color: white;
   padding: 0.75rem 0;
   border-radius: 0.25rem;
